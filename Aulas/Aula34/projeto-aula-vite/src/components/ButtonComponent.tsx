@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Button() {
   
   function clicaAqui() {
@@ -10,7 +8,7 @@ function Button() {
     <button onClick={clicaAqui} className="
       w-full 
       mt-6 
-      bg-gradient-to-r from-indigo-600 to-violet-600 
+      bg-linear-to-r from-indigo-600 to-violet-600 
       text-white 
       font-semibold 
       py-3 px-4 
