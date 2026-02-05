@@ -21,7 +21,7 @@ const Companion = () => {
     let animationFrameId;
 
     const smoothMove = () => {
-      // Apply a smooth, spring-like movement towards the mouse position
+      // Apply a smooth movement towards the mouse position
       setPosition((prevPosition) => {
         const lerp = (start, end, t = 0.1) => start + (end - start) * t;
 
@@ -41,13 +41,12 @@ const Companion = () => {
 
   return (
     <div className="relative">
-      {/* Companion with new smooth follow effect and offset from the mouse */}
       <div
         className="w-20 h-20 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg fixed"
         style={{
-          left: `${position.x - 20}px`, // Adjust to center the companion
-          top: `${position.y - 20}px`,  // Adjust to center the companion
-          transition: 'none', // We control the movement ourselves
+          left: `${position.x - 20}px`, 
+          top: `${position.y - 20}px`,  
+          transition: 'none', 
         }}
       >
         <span className="absolute w-full h-full flex items-center justify-center text-white font-bold text-2xl">
