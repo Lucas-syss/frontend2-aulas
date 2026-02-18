@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Coisa from "../components/TestComponent";
+import Coisa from "../src/app/components/TestComponent";
 
 test("Testa o componente", () => {
     render(<Coisa idade={25} />);

@@ -1,4 +1,4 @@
-import divisao from "../components/TestFunction";
+import divisao from "../src/app/components/TestFunction";
 
 test("Testa a função de divisão", () => {
     expect(divisao(10, 2)).toBe(5);
